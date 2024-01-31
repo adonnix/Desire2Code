@@ -8,6 +8,10 @@
     scroll-behavior: smooth;
 }
 html{
+    /* overflow-x: hidden; */
+    max-width: 1920px ;
+}
+body{
     overflow-x: hidden;
 }
 /* text style start */
@@ -174,7 +178,7 @@ h1{
 /* navbar start  */
 
 header{
-    width: 1920px;
+    max-width: 1920px;
     height: 92px;
     display: flex;
     justify-content: space-between;
@@ -213,7 +217,7 @@ header{
 
 /* hero section start */
 .hero-sec{
-    width: 1920px;
+    max-width: 1920px;
     height: 988px;
     flex-shrink: 0;
     background: url(images/home/home-background.png), lightgray 50% / cover no-repeat;
@@ -235,7 +239,7 @@ header{
 
 /* about section start */
 .about-sec{
-    width: 1920px;
+    max-width: 1920px;
     height: 1080px;
     flex-shrink: 0;
     background: url(images/about/about-background.png), lightgray 50% / cover no-repeat;
@@ -244,6 +248,7 @@ header{
     position: relative;
     top: 10%;
     left: 10%;
+    max-width: 400px;
 }
 .about-sec p{
     position: relative;
@@ -274,7 +279,7 @@ header{
 
 /* project section start */
 .project-sec{
-    width: 1920px;
+    max-width: 1920px;
     height: 1080px;
     flex-shrink: 0;
     background: url(images/project/Project-background.png), lightgray 50% / cover no-repeat;
@@ -325,7 +330,7 @@ header{
 
 /* footer section start */
 .footer-sec{
-    width: 1920px;
+    max-width: 1920px;
     height: 1080px;
     flex-shrink: 0;
     background: url(images/footer/footer-background.png), lightgray 50% / cover no-repeat;
