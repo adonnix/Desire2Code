@@ -1,0 +1,393 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+html{
+    overflow-x: hidden;
+}
+/* text style start */
+li, a, button{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #FFF;
+    text-decoration: none;
+}
+h1{
+    background: linear-gradient(180deg, #8301D3 0%, #410DEF 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 90px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.big-text-02{
+    color: #EEE;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.gradient-text-03{
+    background: linear-gradient(180deg, #8301D3 0%, #410DEF 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.big-text-04{
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.48px;
+}
+.big-text-05{
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    }
+.text-06{
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+}
+.long-p{
+    color: rgba(255, 255, 255, 0.60);
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    max-width: 550px;
+    
+}
+.text-06{
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 83.333% */
+    letter-spacing: -0.24px;
+}
+/* text style end */
+
+/* Buttons style start */
+.nav-btn-01 button{
+    border: none;
+    border-radius: var(--12, 12px);
+    background: #090B0E;
+    box-shadow: 0px 0px 4px 0px #EEE inset;
+    width: 102px;
+    height: var(--28, 28px);
+    flex-shrink: 0;
+    color: #EEE;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+.nav-btn-01 button:hover{
+    background: #090B0E;
+    box-shadow: -1px -1px 2px 0px #8301D3, 1px 1px 2px 0px #410DEF;
+    background: linear-gradient(180deg, #8301D3 0%, #410DEF 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.gradient-btn-02 button{
+    border-radius: 29px;
+    border: none;
+    background: linear-gradient(180deg, #8301D3 0%, #410DEF 100%);
+    width: 180px;
+    height: 60px;
+    flex-shrink: 0;
+    color: var(--Colors-white-white, #FFF);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: -0.18px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+.gradient-btn-02 button:hover{
+    background: #090B0E;
+    box-shadow: -2px -2px 4px 0px #8301D3, 2px 2px 4px 0px #410DEF;
+    background: linear-gradient(180deg, #8301D3 0%, #410DEF 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.dark-btn-03 button{
+    border-radius: 32px;
+    background: #090B0E;
+    box-shadow: -2px -2px 4px 0px #8301D3, 2px 2px 4px 0px #410DEF;
+    background: linear-gradient(180deg, #8301D3 0%, #410DEF 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    width: 150px;
+    height: var(--40, 40px);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 160.5%;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+.dark-btn-03 button:hover{
+    background: #EEE;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    box-shadow: 0px 0px 4px 0px #EEE inset;
+}
+
+/* Buttons style end */
+
+/* navbar start  */
+
+header{
+    width: 1920px;
+    height: 92px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    background-color: #090B0E;
+}
+
+.logo{
+    cursor: pointer;
+    position: relative;
+    left: 220px;
+}
+.nav-links{
+    list-style: none;
+    position: relative;
+    right: 20%;
+}
+.nav-links li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+.nav-links li a{
+    transition: all 0.3s ease 0s;
+}
+.nav-links li a:hover{
+    background: linear-gradient(180deg, #8301D3 0%, #410DEF 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.nav-links button{
+    margin: 0px 5px;
+}
+/* navbar end */
+
+/* hero section start */
+.hero-sec{
+    width: 1920px;
+    height: 988px;
+    flex-shrink: 0;
+    background: url(images/home/home-background.png), lightgray 50% / cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+}
+.hero-sec div,div h1{
+    position: relative;
+    top: -40px;
+}
+.hero-sec button{
+    position: relative;
+    left: 45%;
+    top: -2%;
+}
+/* hero section end */
+
+/* about section start */
+.about-sec{
+    width: 1920px;
+    height: 1080px;
+    flex-shrink: 0;
+    background: url(images/about/about-background.png), lightgray 50% / cover no-repeat;
+}
+.about-sec img{
+    position: relative;
+    top: 10%;
+    left: 10%;
+}
+.about-sec p{
+    position: relative;
+    left: 60%;
+    top: -35%;
+    padding: 10px;
+}
+.about-sec .long-p{
+    position: relative;
+    left: 60%;
+    top: -40%;
+    padding: 10px;
+}
+.about-sec .big-text-04{
+    position: relative;
+    left: 60%;
+    top: -40%;
+    padding: 10px;
+}
+.about-sec a{
+    position: relative;
+    left: 60%;
+    top: -30%;
+    padding: 10px;
+}
+
+/* about section start */
+
+/* project section start */
+.project-sec{
+    width: 1920px;
+    height: 1080px;
+    flex-shrink: 0;
+    background: url(images/project/Project-background.png), lightgray 50% / cover no-repeat;
+}
+.project-sec .gradient-text-03{
+    text-align: left;
+    position: relative;
+    left: 13%;
+    /* top: 5%; */
+}
+.grid-img{
+    width: 1200px;
+    height: 710px;
+    /* display: block; */
+    flex-wrap: wrap;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.grid-img img{
+    margin: 8px;
+    transition: all 0.3s ease 0s;
+    position: relative;
+    top: -5%;
+}
+.grid-img img:hover{
+    opacity: 50%;
+}
+.grid-img :nth-child(3){
+    position: relative;
+    top: 12%;
+}
+.grid-img :nth-child(4){
+    position: relative;
+    left: 6.6%;
+}
+.grid-img :nth-child(5){
+    position: relative;
+    left: 6.6%;
+}
+.grid-img :nth-child(6){
+    position: relative;
+    left: 6.6%;
+}
+
+/* project section end */
+
+/* footer section start */
+.footer-sec{
+    width: 1920px;
+    height: 1080px;
+    flex-shrink: 0;
+    background: url(images/footer/footer-background.png), lightgray 50% / cover no-repeat;
+}
+.footer-sec div{
+    position: relative;
+    top: 10%;
+}
+
+.footer-sec form{
+    width: 500px;
+    height: 700px;
+    flex-shrink: 0;
+    border-radius: 50px;
+    background: #090B0E;
+    box-shadow: 2px 2px 2px 0px #410DEF, -2px -2px 2px 0px #8301D3;
+    position: relative;
+    left: 60%;
+    top: 15%;
+}
+.footer-sec form input{
+    display: flex;
+    width: 473px;
+    height: 37px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 5.408px;
+    border-radius: 32px;
+    background: #090B0E;
+    box-shadow: -2px -2px 4px 0px #8301D3, 2px 2px 4px 0px #410DEF;
+    background: linear-gradient(180deg, #8301D3 0%, #410DEF 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    width: 400px;
+    height: var(--40, 40px);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 160.5%;
+    border: none;
+    text-align: start;
+    padding: 20px;
+    margin: 40px;
+    position: relative;
+    top: 10%;
+    outline-width: 0;
+    transition: 0.3s;
+}
+
+.footer-sec a{
+    position: relative;
+    top: 12%;
+    left: 30%;
+}
+.footer-sec form div{
+    position: relative;
+    left: 10%;
+}
+.footer-sec form .purple{
+    color: #8301D3;
+}
+/* footer section end */
+
